@@ -1,0 +1,121 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-image: url(My\ Personal\ Website1.png);
+    transition: background-color 0.5s ease;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 99;
+}
+
+span{
+    color: gold;
+}
+
+.Logo {
+    font-size: 1.7em;
+    color: white;
+    user-select: none;
+}
+
+.navigation a {
+    position: relative;
+    font-size: 1.1em;
+    color:white;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 40px;
+    list-style: none;
+}
+
+.navigation a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    width: 100%;
+    height: 2px;
+    background: white;
+    border-radius: 5px;
+    transform-origin: right;
+    transform: scaleX(0);
+    transition: transform .5s;
+}
+
+.navigation a:hover::after {
+    transform-origin: left;
+    transform: scaleX(1);
+}
+
+.deskripsi {
+    height: 100vh;
+    padding: 0 10%;
+    align-items: center;
+    margin-top: 100px;
+    margin-left: -185px;
+}
+
+.home-gelap{
+    position:absolute;
+    top: 0;
+    right: 30px;
+    width: 500px;
+    height: 100%;
+    background: transparent;
+    transition: 3s;
+}
+
+.home-gelap:hover{
+    background: white;
+    opacity: 8s;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    background-color: transparent;
+    color: white;
+    text-align:center;
+    padding: 5px;
+    width: 100%;
+}
+
+.dark-mode{
+    background-image: url(My\ Personal\ Website.png);
+    color: black;
+}
+
+button{
+    background-color: white;
+    color: black;
+    font-size: 15px;
+    font-weight: 600;
+    border: 100px;
+    width: 30px;
+    height: 30px;
+    border-radius: 20%;
+    position: relative;
+    margin-left: 30px;
+}
